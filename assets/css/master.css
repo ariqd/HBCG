@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    background-color: #ECEDF1;
+    height: 100%;
+    font-weight: normal;
+}
+
+.bg {
+    background-image: url("../img/bg.jpeg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+nav {
+    background-color: #212121;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+nav .left {
+    float: left;
+    padding: 10px;
+}
+
+nav .left .text {
+    float: right;
+    margin: 6px 10px;
+    font-size: 18px;
+    color: #fafafa;
+}
+
+nav .right {
+    float: right;
+    margin-top: 18px;
+}
+
+nav .right a {
+    text-decoration: none;
+    padding: 35px 20px;
+    color: #fafafa;
+    font-size: 16px;
+}
+
+nav .right a.active {
+    background-color: #fafafa;
+    color: #3F51B5;
+}
+
+nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .section {
+    padding-top: 70px;
+}
+
+.isi {
+    padding: 0 100px;
+}
+
+.wadah {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.baris::before,
+.baris::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*='kolom-'] {
+    float: left;
+    min-height: 1px;
+    width: 8.33%;
+    padding: 15px;
+}
+
+
+.kolom-1 { width: 8.33%; }
+.kolom-2 { width: 16.66%; }
+.kolom-3 { width: 25%; }
+.kolom-4 { width: 33.33%; }
+.kolom-5 { width: 41.66%; }
+.kolom-6 { width: 50%; }
+.kolom-7 { width: 58.33%; }
+.kolom-8 { width: 66.66%; }
+.kolom-9 { width: 75%; }
+.kolom-10 { width: 83.33%; }
+.kolom-11 { width: 91.66%; }
+.kolom-12 { width: 100%; }
+
+.utama {
+    padding-top: 150px;
+    position: absolute;
+    top: 5%;
+}
+
+.utama img {
+    background: #212121;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.utama h1.judul {
+    font-size: 64px;
+    font-weight: normal;
+    margin: 0;
+    color: #212121;
+    display: inline-flex;
+}
+
+.utama h2{
+    font-weight: lighter;
+    line-height: 40px;
+    font-size: 30px;
+    color: #212121;
+}
+
+.section {
+    height: 100vh;
+}
+
+.display-1 {
+    font-weight: normal;
+    font-size: 48px;
+}
+
+h1.display-2 {
+    font-size: 48px;
+    font-weight: normal;
+}
+
+.one h1.display-1 {
+    padding-top: 140px;
+}
+
+h2.display-2 {
+    font-weight: normal;
+    line-height: 32px;
+    padding-top: 20px;
+}
+
+.one p.desc {
+    text-align: right;
+    padding: 240px 0;
+    font-size: 22px;
+}
+
+.one img {
+    padding-top: 30px;
+    position: absolute;
+    clip: rect(0px,660px,560px,0px);
+}
+
+.two {
+    padding-top: 160px;
+    align-items: center;
+}
+
+.two .services {
+    font-size: 24px;
+}
+
+.two .services h4 {
+    font-weight: normal;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.three {
+    padding-top: 70px;
+    height: 130vh;
+}
+
+.table {
+    width: 100%;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: table;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.txt {
+  background-color: #212121;
+  color: white;
+  font-size: 24px;
+  padding: 16px 32px;
+}
+
+.four .inliner {
+    text-align: center;
+}
+
+.four .inliner h1 {
+    font-weight: normal;
+}
+
+.btn {
+    padding: 20px;
+    background: #3F51B5;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+}
+
+.clickable {
+    cursor: pointer;
+    border-bottom: 3px solid #212121;
+}
